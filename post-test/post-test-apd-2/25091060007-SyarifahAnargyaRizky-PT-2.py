@@ -1,0 +1,36 @@
+# Program untuk cek berat badan di layanan kesehatan Daffa yang berguna untuk menentukan berat badan ideal
+print("=" * 85)
+print("|                          LAYANAN KESEHATAN DASAR DAFFA                            |")
+print("|                             PROGRAM CEK BERAT BADAN                               |")
+print("=" * 85)
+
+# Meminta data pasien dari pengguna
+nama_pasien = input("Masukkan Nama Pasien: ")
+tinggi_badan = float(input("Masukkan Tinggi Badan (cm): "))
+berat_badan = float(input("Masukkan Berat Badan (kg): "))
+
+#penentuan untuk tolak ukurnya
+berat_ideal = tinggi_badan - 100
+jin_kelebihan = berat_badan > berat_ideal
+jin_kekurangan = berat_badan < (berat_ideal - 10)
+
+# Kekurangan = 0, Kelebihan = 2, Ideal = 1
+kategori_berat = int(jin_kelebihan) * 2 + int(not jin_kekurangan and not jin_kelebihan) * 1
+
+# Daftar status: kekurangan, ideal, atau kelebihan
+status_list = ["Kekurangan Berat Badan", "Berat Badan Ideal", "Kelebihan Berat Badan"]
+
+#keterangan statusnya
+status = status_list[kategori_berat]
+
+print("=" * 85)
+print("|                               HASIL CEK BERAT BADAN                               |")
+print("=" * 85)
+print(f"| Nama Pasien     : {nama_pasien:<52}            |")
+print(f"| Tinggi Badan    : {tinggi_badan:<5.1f} cm{' ' * 52}    |")
+print(f"| Berat Badan     : {berat_badan:<5.1f} kg{' ' * 52}    |") 
+print(f"| Berat Ideal     : {berat_ideal:<5.1f} kg{' ' * 52}    |")
+print(f"| Status          : {status:<52}            |")
+print("=" * 85)
+
+print("\nTerima kasih telah menggunakan layanan kesehatan Daffa!")
