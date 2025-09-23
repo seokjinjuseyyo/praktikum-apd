@@ -11,11 +11,11 @@ berat_badan = float(input("Masukkan Berat Badan (kg): "))
 
 #penentuan untuk tolak ukurnya
 berat_ideal = tinggi_badan - 100
-jin_kelebihan = berat_badan > berat_ideal
-jin_kekurangan = berat_badan < (berat_ideal - 10)
+is_kelebihan = berat_badan > berat_ideal
+is_kekurangan = berat_badan < (berat_ideal - 10)
 
 # Kekurangan = 0, Kelebihan = 2, Ideal = 1
-kategori_berat = int(jin_kelebihan) * 2 + int(not jin_kekurangan and not jin_kelebihan) * 1
+kategori_berat = int(is_kelebihan) * 2 + int(not is_kekurangan and not is_kelebihan) * 1
 
 # Daftar status: kekurangan, ideal, atau kelebihan
 status_list = ["Kekurangan Berat Badan", "Berat Badan Ideal", "Kelebihan Berat Badan"]
