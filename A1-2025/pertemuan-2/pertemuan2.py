@@ -42,13 +42,13 @@
 # bisakah = 
 
 
-harga = float(input('masukan total harga\t:'))
-if total > 100.000: 
-    print ('diskon 20%')
-elif:
-    total > 50.000:
-    print ('diskon 10%')
-else:
-    print ('harga normal')
-jadi = 'diskon 20%' if total > 100.000  total > 50.000 'diskon 10%' else 'harga normal'
-print (jadi)
+# harga = float(input('masukan total harga\t:'))
+# if total > 100.000: 
+#     print ('diskon 20%')
+# elif:
+#     total > 50.000:
+#     print ('diskon 10%')
+# else:
+#     print ('harga normal')
+# jadi = 'diskon 20%' if total > 100.000  total > 50.000 'diskon 10%' else 'harga normal'
+# print (jadi)
