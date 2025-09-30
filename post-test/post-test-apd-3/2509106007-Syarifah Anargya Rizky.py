@@ -2,7 +2,7 @@ print("=" * 65)
 print("|          SELAMAT DATANG DI TOKO MAKANAN KUCING WINGKY         |")
 print("=" * 65)
 
-status_member = input("Apakah Anda member? (ya/tidak): ")
+status_member = input("Apakah Anda merupakan member toko wingky? (ya/tidak): ")
 
 if status_member == "ya":
     print("\n-------- SILAHKAN ANDA MELAKUKAN LOGIN TERLEBIH DAHULU --------")
@@ -24,10 +24,10 @@ if status_member == "ya":
         print("| No |            Nama Produk             |        Harga        |")
         print("|----|------------------------------------|---------------------|")
         print("| 1  | Royal Canin Persian Adult          |     Rp  85.000      |")
-        print("| 2  | Whiskas Dry Food Tuna              |     Rp  45.000      |")
-        print("| 3  | Pro Plan Kitten Chicken            |     Rp 120.000      |")
+        print("| 2  | Whiskas Dry Food Tuna              |     Rp  48.000      |")
+        print("| 3  | Pro Plan Kitten Chicken            |     Rp 123.000      |")
         print("| 4  | Me-O Adult Cat Seafood             |     Rp  35.000      |")
-        print("| 5  | Hills Science Diet Indoor          |     Rp 150.000      |")
+        print("| 5  | Hills Science Diet Indoor          |     Rp 157.500      |")
         print("=" * 65)
         
         pilihan = int(input("\nSilahkan pilih etalase produk yang diinginkan (1/2/3/4/5): "))
@@ -35,25 +35,25 @@ if status_member == "ya":
         
         if pilihan == 1:
             nama_produk = "Royal Canin Persian Adult"
-            harga_satuan = 85000
+            harga_perpcs = 85000
         elif pilihan == 2:
             nama_produk = "Whiskas Dry Food Tuna"
-            harga_satuan = 45000
+            harga_perpcs = 48000
         elif pilihan == 3:
             nama_produk = "Pro Plan Kitten Chicken"
-            harga_satuan = 120000
+            harga_perpcs = 123000
         elif pilihan == 4:
             nama_produk = "Me-O Adult Cat Seafood"
-            harga_satuan = 35000
+            harga_perpcs = 35000
         elif pilihan == 5:
             nama_produk = "Hills Science Diet Indoor"
-            harga_satuan = 150000
+            harga_perpcs = 157500
         else:
             print("Pilihan tidak valid!")
-            nama_produk = "Produk Tidak Dikenal"
-            harga_satuan = 0
+            nama_produk = "Produk Tidak Tersedia"
+            harga_perpcs = 0
         
-        harga_sebelum_diskon = harga_satuan * quantity
+        harga_sebelum_diskon = harga_perpcs * quantity
         diskon_persen = 15
         total_diskon = harga_sebelum_diskon * diskon_persen / 100
         harga_setelah_diskon = harga_sebelum_diskon - total_diskon
@@ -63,7 +63,7 @@ if status_member == "ya":
         print("=" * 65)
         print(f"| Produk       : {nama_produk:<30}                 |")
         print(f"| Jumlah       : {quantity:<2} pack                                        |")
-        print(f"| Harga Satuan : Rp {harga_satuan:<20,}                        |")
+        print(f"| Harga Satuan : Rp {harga_perpcs:<20,}                        |")
         print("|-" + "-" * 61 + "-|")
         print(f"| Harga Sebelum Diskon : Rp {harga_sebelum_diskon:<20,}                |")
         print(f"| Diskon Member (15%)  : Rp {total_diskon:<20,}                |")
@@ -73,7 +73,7 @@ if status_member == "ya":
         print("                Semoga hari anda menyenangkan                      ")
         
     else:
-        print("\nWah login anda gagal! Username atau password anda salah3")
+        print("\nWah login anda gagal! Username atau password anda salah")
         print("Silahkan coba lagi atau sign in sebagai member baru")
 
 else:
@@ -83,8 +83,8 @@ else:
     print("| No |            Nama Produk             |        Harga        |")
     print("|----|------------------------------------|---------------------|")
     print("| 1  | Royal Canin Persian Adult          |     Rp  85.000      |")
-    print("| 2  | Whiskas Dry Food Tuna              |     Rp  45.000      |")
-    print("| 3  | Pro Plan Kitten Chicken            |     Rp 120.000      |")
+    print("| 2  | Whiskas Dry Food Tuna              |     Rp  48.000      |")
+    print("| 3  | Pro Plan Kitten Chicken            |     Rp 123.000      |")
     print("| 4  | Me-O Adult Cat Seafood             |     Rp  35.000      |")
     print("| 5  | Hills Science Diet Indoor          |     Rp 157.500      |")
     print("=" * 65)
@@ -94,32 +94,32 @@ else:
     
     if pilihan == 1:
         nama_produk = "Royal Canin Persian Adult"
-        harga_satuan = 85000
+        harga_perpcs = 85000
     elif pilihan == 2:
         nama_produk = "Whiskas Dry Food Tuna"
-        harga_satuan = 45000
+        harga_perpcs = 48000
     elif pilihan == 3:
         nama_produk = "Pro Plan Kitten Chicken"
-        harga_satuan = 120000
+        harga_perpcs = 123000
     elif pilihan == 4:
         nama_produk = "Me-O Adult Cat Seafood"
-        harga_satuan = 35000
+        harga_perpcs = 35000
     elif pilihan == 5:
         nama_produk = "Hills Science Diet Indoor"
-        harga_satuan = 157500
+        harga_perpcs = 157500
     else:
         print("Pilihan tidak valid!")
-        nama_produk = "Produk Tidak Dikenal"
-        harga_satuan = 0
+        nama_produk = "Produk Tidak Tersedia"
+        harga_perpcs = 0
     
-    total_harga = harga_satuan * quantity
+    total_harga = harga_perpcs * quantity
     
     print("\n" + "=" * 65)
     print("|                        STRUK PEMBELIAN                        |")
     print("=" * 65)
     print(f"| Produk       : {nama_produk:<30}                 |")
     print(f"| Jumlah       : {quantity:<2} pack                                        |")
-    print(f"| Harga Satuan : Rp {harga_satuan:<30}              |")
+    print(f"| Harga Satuan : Rp {harga_perpcs:<30}              |")
     print("|-" + "-" * 61 + "-|")
     print(f"| TOTAL BAYAR : Rp {total_harga:<30}               |")
     print("=" * 65)
