@@ -126,3 +126,4 @@ else:
     print("       Terima kasih karena telah berbelanja di toko WINGKY       ")
     print("                  Semoga hari anda menyenangkan                  ")
     print("       Daftar member sekarang untuk mendapatkan diskon 15%!      ")
+    
