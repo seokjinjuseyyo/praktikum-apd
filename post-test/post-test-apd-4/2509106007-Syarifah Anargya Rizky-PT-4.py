@@ -80,7 +80,7 @@ while lanjut_program:
     lanjut_belanja = True
     produk_baru = ""
     while lanjut_belanja:
-        os.system('cls || clear')
+        
         
         if produk_baru != "":
             print()
