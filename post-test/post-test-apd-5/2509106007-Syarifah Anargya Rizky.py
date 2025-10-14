@@ -44,7 +44,7 @@ while True:
     if pilihan_utama == "1":
         os.system('cls || clear')
         print("=" * 60)
-        print("|         SELAMAT DATANG DI TOKO PERALATAN KUCING WINGKY        |")
+        print("|      SELAMAT DATANG DI TOKO PERALATAN KUCING WINGKY      |")
         print("=" * 60)
         print("\n--- LOGIN ---")
         username = input("Username: ")
